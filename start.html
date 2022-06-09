@@ -11,14 +11,15 @@
 
 <body>
     <picture>
-        <img src="assets/img1.webp" alt="Immagine 1"
-        srcset="assets/business-man.webp" alt="immagine 1 alternativa"
-        srcset="assets/business-man.jpg" alt="immagine 1 alternativa"/>
+        <source media="(min-width: 1200px)" srcset="assets/business-man.jpg" />
+        <source media="(min-width: 600px)" srcset="assets/business-man.webp" />
+        <img src="assets/business-man.jpg" alt="Immagine business fallback 1"/>
+        
     </picture>
     <picture>
-        <img src="assets/img2.webp" alt="Immagine 2"
-        srcset="assets/ok-hand.webp" alt="immagine 2 alternativa"
-        srcset="assets/ok-hand.jpg" alt="immagine 2 alternativa"/>
+        <source media="(min-width: 1200px)" srcset="assets/ok-hand.jpg"/>
+        <source media="(min-width: 600px)" srcset="assets/ok-hand.webp"/>
+        <img src="assets/ok-hand.jpg" alt="Immagine ok fatto con la mano fallback 2"/>
 
     </picture>
 
